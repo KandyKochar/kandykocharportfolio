@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kandy Kochar — Portfolio '26</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo"><span class="logo-k">K</span><span class="logo-rest">andy Kochar</span></div>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#tools">Tools</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-right">
+          <button class="dark-toggle" id="darkToggle"><i class="fas fa-moon" id="darkIcon"></i></button>
+          <div class="mobile-menu" id="mobileMenu"><i class="fas fa-bars"></i></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-img"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Portfolio '26</p>
+          <h1>
+            <span class="h1-kandy">Kandy</span>
+            <em class="h1-kochar">Kochar.</em>
+          </h1>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+          <div class="hero-tags">
+            <span class="htag"><i class="fas fa-map-marker-alt"></i> Toronto, CA</span>
+            <span class="htag"><i class="fas fa-graduation-cap"></i> Computer Programming</span>
+            <span class="htag"><i class="fas fa-star"></i> Class of '26</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section-white" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <div class="about-img-wrap">
+            <img src="kandy_about.png" alt="Kandy Kochar" />
+            <div class="about-badge"><span class="badge-num">'26</span><span class="badge-text">Class of</span></div>
+          </div>
+        </div>
+        <div class="about-text-col reveal delay-1">
+          <p class="section-eyebrow">About Me</p>
+          <h2>Heyy! I'm <em>Kandy</em></h2>
+          <p>I am a computer programming student with a distinctly entrepreneurial orientation — one whose ambitions sit at the intersection of technology and business. Driven by the conviction that technical literacy is a professional imperative of this generation, I pursued this diploma with deliberate intent.</p>
+          <p>My core strengths lie in marketing, sales, and design — disciplines I approach with both analytical rigour and an instinctive understanding of human behaviour. A master communicator, confident public speaker, and passionate creator. Multilingual, voracious reader, and a quick study.</p>
+          <div class="about-vision">
+            <i class="fas fa-rocket"></i>
+            My long-term vision: to build a diversified conglomerate at the nexus of <strong>technology and commerce.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section-gray" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What I Bring</p>
+        <h2>Strategy, Execution <em>&amp; Stack</em></h2>
+        <p class="section-sub">What distinguishes a strong candidate from an exceptional one is not the breadth of their skill set, but the judgment to know how to use it.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal delay-1">
+          <div class="skill-num">01</div>
+          <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Business &amp; Sales</h3>
+          <ul>
+            <li>Sales &amp; Persuasion</li><li>Consumer Psychology</li>
+            <li>Communication &amp; Negotiation</li><li>Business Strategy</li>
+            <li>Market Awareness</li><li>Public Speaking</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-num">02</div>
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Java &amp; Python</li><li>SQL &amp; Databases</li>
+            <li>HTML, CSS &amp; JavaScript</li><li>React · Node.js · MongoDB</li>
+            <li>Problem Solving &amp; Logic</li><li>AI Prompting</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <div class="skill-num">03</div>
+          <div class="skill-icon"><i class="fas fa-palette"></i></div>
+          <h3>Creative &amp; Design</h3>
+          <ul>
+            <li>Canva &amp; Figma</li><li>UI/UX Basics</li>
+            <li>Visual Storytelling</li><li>Content Direction</li>
+            <li>On-Camera Talent</li><li>Brand Strategy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="tools section-white" id="tools">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Capabilities</p>
+        <h2>Tools <em>&amp; Platforms</em></h2>
+        <p class="section-sub">The software and platforms I use to bring ideas to life.</p>
+      </div>
+      <div class="tools-grid reveal delay-1">
+        <div class="tool-item"><img src="logo_canva.jpeg" alt="Canva"/><span>Canva</span></div>
+        <div class="tool-item"><img src="logo_capcut.png" alt="CapCut"/><span>CapCut</span></div>
+        <div class="tool-item"><img src="logo_gworkspace.png" alt="Google Workspace"/><span>Google Workspace</span></div>
+        <div class="tool-item"><img src="logo_ppt.jpeg" alt="PowerPoint"/><span>PowerPoint</span></div>
+        <div class="tool-item"><img src="logo_word.png" alt="Word"/><span>Word</span></div>
+        <div class="tool-item"><img src="logo_excel.png" alt="Excel"/><span>Excel</span></div>
+        <div class="tool-item"><img src="logo_github.png" alt="GitHub"/><span>GitHub</span></div>
+        <div class="tool-item"><img src="logo_vscode.jpeg" alt="VS Code"/><span>VS Code</span></div>
+        <div class="tool-item"><img src="logo_netbeans.jpeg" alt="NetBeans"/><span>NetBeans IDE</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section-gray" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Career</p>
+        <h2>Work <em>Experience</em></h2>
+        <p class="section-sub">Real-world roles that shaped my commercial instincts, resilience, and people skills.</p>
+      </div>
+      <div class="exp-list">
+        <div class="exp-card reveal">
+          <div class="exp-num">05</div>
+          <div class="exp-body">
+            <div class="exp-top">
+              <div>
+                <h4>Door-to-Door Sales</h4>
+                <p class="exp-company">TELUS</p>
+              </div>
+              <div class="exp-type-badge">Direct Sales · Field Experience</div>
+            </div>
+            <p class="exp-desc">Executed direct-to-consumer sales campaigns for one of Canada's leading telecommunications companies. Developed real-world competency in cold outreach, objection handling, persuasive communication, and closing — operating in high-pressure, performance-driven environments with measurable conversion targets.</p>
+            <div class="exp-tags">
+              <span>D2D Sales</span><span>TELUS</span><span>Persuasion</span><span>Consumer Engagement</span><span>Field Sales</span>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card reveal delay-1">
+          <div class="exp-num">06</div>
+          <div class="exp-body">
+            <div class="exp-top">
+              <div>
+                <h4>Retail Sales</h4>
+                <p class="exp-company">Luxury Fragrance</p>
+              </div>
+              <div class="exp-type-badge">Retail · Luxury Product Sales</div>
+            </div>
+            <p class="exp-desc">Delivered high-touch retail sales experiences in a luxury Arabic fragrance environment — cultivating product expertise, clienteling skills, and an instinctive understanding of premium consumer behaviour. Demonstrated the ability to communicate brand heritage and sensory value to a diverse, multicultural clientele.</p>
+            <div class="exp-tags">
+              <span>Luxury Retail</span><span>Arabic Fragrances</span><span>Clienteling</span><span>Consumer Psychology</span><span>Multilingual Sales</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILM REEL -->
+  <section class="film-section section-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Showcase</p>
+        <h2>Project <em>Reel</em></h2>
+        <p class="section-sub">Scroll through the reel — hover to pause.</p>
+      </div>
+    </div>
+    <div class="film-track-wrap">
+      <div class="film-track-inner" id="filmTrack">
+
+        <!-- CareBear -->
+        <div class="reel-card reel-notebook">
+          <div class="nb-rings"><span></span><span></span><span></span><span></span></div>
+          <div class="nb-body">
+            <p class="nb-title">CareBear</p>
+            <p class="nb-sub">E-Commerce Web App · Front-End · JavaScript</p>
+            <ul><li>JavaScript</li><li>HTML &amp; CSS</li><li>E-Commerce</li><li>UI/UX</li><li>Responsive Design</li></ul>
+          </div>
+        </div>
+        <div class="reel-card reel-img"><img src="carebear_ss.png" alt="CareBear Home" style="object-position:center top;"/><div class="reel-label">CareBear · Home</div></div>
+        <div class="reel-card reel-img"><img src="carebear_ss2.png" alt="CareBear Cart" style="object-position:center top;"/><div class="reel-label">CareBear · Cart</div></div>
+        <div class="reel-card reel-img"><img src="carebear_ss3.png" alt="CareBear Products" style="object-position:center top;"/><div class="reel-label">CareBear · Products</div></div>
+
+        <div class="reel-divider"><span>✦</span></div>
+
+        <!-- BankEase -->
+        <div class="reel-card reel-notebook">
+          <div class="nb-rings"><span></span><span></span><span></span><span></span></div>
+          <div class="nb-body">
+            <p class="nb-title">BankEase</p>
+            <p class="nb-sub">Secure Banking Web App · Team Lead</p>
+            <ul><li>JavaScript</li><li>HTML &amp; CSS</li><li>DOM Manipulation</li><li>Team Lead</li><li>API Integration</li></ul>
+          </div>
+        </div>
+        <div class="reel-card reel-img"><img src="bankease_ss.png" alt="BankEase Home" style="object-position:center top;"/><div class="reel-label">BankEase · Home</div></div>
+        <div class="reel-card reel-img"><img src="bankease_ss2.png" alt="BankEase Dashboard" style="object-position:center top;"/><div class="reel-label">BankEase · Dashboard</div></div>
+
+        <div class="reel-divider"><span>✦</span></div>
+
+        <!-- ConnectEd -->
+        <div class="reel-card reel-notebook">
+          <div class="nb-rings"><span></span><span></span><span></span><span></span></div>
+          <div class="nb-body">
+            <p class="nb-title">ConnectEd</p>
+            <p class="nb-sub">Full-Stack Web App · Academic Project</p>
+            <ul><li>React</li><li>Node.js</li><li>MongoDB</li><li>JWT Auth</li><li>SSO</li></ul>
+          </div>
+        </div>
+        <div class="reel-card reel-img"><img src="coop_login.png" alt="ConnectEd Login" style="object-position:center top;"/><div class="reel-label">ConnectEd · Login</div></div>
+        <div class="reel-card reel-img"><img src="coop_dashboard.png" alt="ConnectEd Dashboard" style="object-position:center top;"/><div class="reel-label">ConnectEd · Dashboard</div></div>
+        <div class="reel-card reel-img"><img src="coop_manage.png" alt="ConnectEd Jobs" style="object-position:center top;"/><div class="reel-label">ConnectEd · Jobs</div></div>
+
+        <div class="reel-divider"><span>✦</span></div>
+
+        <!-- Brand Content -->
+        <div class="reel-card reel-notebook">
+          <div class="nb-rings"><span></span><span></span><span></span><span></span></div>
+          <div class="nb-body">
+            <p class="nb-title">Brand Content</p>
+            <p class="nb-sub">Content Strategy · On-Camera · Client Work</p>
+            <ul><li>Green Valley Supermarket</li><li>Sweet Heaven Cakes</li><li>Creative Beauty Salon</li><li>Vege Foods &amp; Bakery</li></ul>
+          </div>
+        </div>
+        <div class="reel-card reel-img"><img src="content_sweet.png" alt="Sweet Heaven" style="object-position:center center;"/><div class="reel-label">Sweet Heaven</div></div>
+        <div class="reel-card reel-img"><img src="content_salon.png" alt="Beauty Salon" style="object-position:center 30%;"/><div class="reel-label">Beauty Salon</div></div>
+        <div class="reel-card reel-img"><img src="content_collage.png" alt="Green Valley" style="object-position:center top;"/><div class="reel-label">Green Valley</div></div>
+        <div class="reel-card reel-img"><img src="content_vege.png" alt="Vege Foods" style="object-position:center 20%;"/><div class="reel-label">Vege Foods</div></div>
+        <div class="reel-card reel-img"><img src="content_cam.png" alt="On Camera" style="object-position:center 30%;"/><div class="reel-label">On Camera</div></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section-gray" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Work</p>
+        <h2>Featured <em>Projects</em></h2>
+        <p class="section-sub">A selection of academic and real-world work across code, design, and content.</p>
+      </div>
+
+      <!-- CareBear -->
+      <div class="project-card reveal" id="proj-carebear">
+        <div class="project-imgs">
+          <div class="collage-grid">
+            <img src="carebear_ss.png" alt="CareBear home" class="collage-main" style="object-position:center top;"/>
+            <img src="carebear_ss2.png" alt="CareBear cart" class="collage-sm" style="object-position:center top;"/>
+            <img src="carebear_ss3.png" alt="CareBear products" class="collage-sm" style="object-position:center top;"/>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="proj-tag">Academic · Team Project</span>
+            <span class="proj-tag tag-fe">Front-End</span>
+          </div>
+          <h3>CareBear</h3>
+          <p class="proj-type">E-Commerce Web Application</p>
+          <p class="proj-desc">A fully functional children's e-commerce platform. Began with a full brand identity exercise — colour palette, typography, and moodboard — before writing a single line of code.</p>
+          <div class="project-stack">
+            <span>JavaScript</span><span>HTML &amp; CSS</span><span>E-Commerce</span><span>UI/UX</span><span>GitHub</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight"><i class="fas fa-check-circle"></i> Co-developed front-end architecture &amp; design system</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Built product listing pages &amp; category filtering</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Shopping cart logic &amp; full checkout flow</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Ensured full cross-device responsiveness</div>
+          </div>
+          <a href="https://github.com/KandyKochar/carebear-shop" target="_blank" class="proj-github-link">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- BankEase -->
+      <div class="project-card project-card-alt reveal" id="proj-bankease">
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="proj-tag">Academic · Team Lead</span>
+            <span class="proj-tag tag-lead">Team Lead</span>
+          </div>
+          <h3>BankEase</h3>
+          <p class="proj-type">Secure Banking Web Application</p>
+          <p class="proj-desc">A secure, full-featured digital banking platform simulating real-world financial operations — from login authentication to loan applications and dynamic transaction tracking. Led a team of 4 with 100% on-time delivery.</p>
+          <div class="project-stats-row">
+            <div class="pstat"><strong>6</strong><span>Features</span></div>
+            <div class="pstat"><strong>4</strong><span>Team Members</span></div>
+            <div class="pstat"><strong>2</strong><span>Dev Phases</span></div>
+            <div class="pstat"><strong>100%</strong><span>On-time</span></div>
+          </div>
+          <div class="project-stack">
+            <span>JavaScript</span><span>HTML &amp; CSS</span><span>DOM Manipulation</span><span>API Integration</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight"><i class="fas fa-check-circle"></i> Architected JS logic powering all interactive features</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Assigned roles &amp; enforced deadlines as team lead</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Scalable, maintainable code for OOP expansion</div>
+          </div>
+          <a href="https://github.com/KandyKochar/bankease-app" target="_blank" class="proj-github-link">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        <div class="project-imgs">
+          <div class="proj-img-stack">
+            <img src="bankease_ss.png" alt="BankEase homepage" class="proj-ss proj-ss-back" style="object-position:center top;"/>
+            <img src="bankease_ss2.png" alt="BankEase dashboard" class="proj-ss proj-ss-front" style="object-position:center top;"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- ConnectEd — real screenshots -->
+      <div class="project-card reveal" id="proj-srp">
+        <div class="project-imgs">
+          <div class="coop-collage">
+            <img src="coop_login.png" alt="ConnectEd Login" style="object-position:center top;"/>
+            <img src="coop_dashboard.png" alt="ConnectEd Dashboard" style="object-position:center top;"/>
+            <img src="coop_manage.png" alt="ConnectEd Manage Jobs" style="object-position:center top;"/>
+            <img src="coop_docs.png" alt="ConnectEd Documents" style="object-position:center top;"/>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="proj-tag">Academic Project</span>
+            <span class="proj-tag tag-fs">Full-Stack</span>
+          </div>
+          <h3>Student Recruitment<br />&amp; Placement Platform</h3>
+          <p class="proj-type">Full-Stack Web Application · React + Node.js</p>
+          <p class="proj-desc">A comprehensive co-op placement platform built for students and employers. Students browse live job postings, submit applications with uploaded documents, and track hiring progress — while employers manage postings, review applicants, and oversee the full recruitment pipeline.</p>
+          <div class="project-stack">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>JWT Auth</span><span>Express.js</span><span>SSO</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight"><i class="fas fa-check-circle"></i> Student dashboard with job browsing &amp; application tracking</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Employer portal with job posting management &amp; applicant review</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Document upload system (PDF, DOC, DOCX)</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> SSO authentication + role-based access control</div>
+          </div>
+          <a href="https://github.com/KandyKochar/coop-connect" target="_blank" class="proj-github-link">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Brand Content -->
+      <div class="project-card project-card-alt reveal" id="proj-content">
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="proj-tag">Client Work</span>
+            <span class="proj-tag tag-content">Content &amp; Video</span>
+          </div>
+          <h3>Brand Content &amp;<br />Video Production</h3>
+          <p class="proj-type">Content Strategy · On-Camera Talent</p>
+          <p class="proj-desc">Produced brand content and video campaigns for multiple local Toronto businesses — delivering polished, platform-ready short-form content that elevated each brand's digital presence.</p>
+          <div class="project-stack">
+            <span>Content Direction</span><span>Visual Storytelling</span><span>CapCut</span><span>Canva</span>
+          </div>
+         
+        </div>
+        <div class="project-imgs">
+          <div class="content-collage-real">
+            <div class="ccr-row">
+              <img src="content_sweet.png" alt="Sweet Heaven" style="object-position:center centre;"/>
+              <img src="content_salon.png" alt="Beauty Salon" style="object-position:center 40%;"/>
+            </div>
+            <div class="ccr-row">
+              <img src="content_green.png" alt="Green Valley" style="object-position:center 65%;"/>
+              <img src="content_vege.png" alt="Vege Foods" style="object-position:center 35%;"/>
+            </div>
+            <div class="ccr-row">
+              <img src="content_cam.png" alt="On Camera" style="object-position:center 30%;"/>
+              <img src="content_collage.png" alt="Content" style="object-position:center 30%;"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CLIENTS -->
+      <div class="clients-section">
+        <div class="section-header reveal" style="margin-top:80px;">
+          <p class="section-eyebrow">Clients &amp; Content</p>
+          <h2>Clients &amp; <em>Deliverables</em></h2>
+        </div>
+        <div class="clients-grid">
+          <div class="client-card reveal delay-1">
+            <div class="client-num">01</div>
+            <div class="client-icon"><i class="fas fa-store"></i></div>
+            <h4>Green Valley Supermarket</h4>
+            <p class="client-type">Grocery &amp; Fresh Produce · Community-Focused</p>
+            <p class="client-desc">Community-focused brand video highlighting fresh produce and local roots — shot and produced to drive foot traffic and build neighbourhood trust.</p>
+            <div class="client-tags"><span>Brand Video</span><span>Community</span><span>On-Camera</span></div>
+          </div>
+          <div class="client-card reveal delay-2">
+            <div class="client-num">02</div>
+            <div class="client-icon"><i class="fas fa-cake-candles"></i></div>
+            <h4>Sweet Heaven Cakes &amp; Coffee</h4>
+            <p class="client-type">Lifestyle F&amp;B · Warm, Indulgent Brand Aesthetic</p>
+            <p class="client-desc">Warm, indulgent lifestyle content crafted to position the brand as a cozy destination — visually rich short-form video for social media engagement.</p>
+            <div class="client-tags"><span>Lifestyle Content</span><span>F&amp;B</span><span>Social Media</span></div>
+          </div>
+          <div class="client-card reveal delay-3">
+            <div class="client-num">03</div>
+            <div class="client-icon"><i class="fas fa-scissors"></i></div>
+            <h4>Creative Beauty Salon &amp; Spa</h4>
+            <p class="client-type">Beauty &amp; Wellness · Aspirational, Confident Tone</p>
+            <p class="client-desc">Aspirational beauty content capturing the salon's premium atmosphere — styled with a confident editorial tone to attract a style-conscious clientele.</p>
+            <div class="client-tags"><span>Beauty</span><span>Editorial</span><span>Brand Identity</span></div>
+          </div>
+          <div class="client-card reveal delay-1">
+            <div class="client-num">04</div>
+            <div class="client-icon"><i class="fas fa-leaf"></i></div>
+            <h4>Vege Foods &amp; Bakery</h4>
+            <p class="client-type">Plant-Based F&amp;B · Fresh, Health-Conscious Messaging</p>
+            <p class="client-desc">Fresh, health-conscious messaging communicating plant-based values — clean visuals aligned with the growing wellness consumer segment.</p>
+            <div class="client-tags"><span>Plant-Based</span><span>Wellness</span><span>Content Strategy</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section-white" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="section-eyebrow">Let's Connect</p>
+          <h2>Get in <em>Touch</em></h2>
+          <p class="contact-sub">I'm always open to new opportunities, collaborations, or just a great conversation.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div><h4>Email</h4><a href="mailto:kandykochar@gmail.com" class="contact-link">kandykochar@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><h4>Location</h4><p>Toronto, Ontario, Canada</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/kandykochar" target="_blank" class="contact-link">linkedin.com/in/kandykochar</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div><h4>GitHub</h4><a href="https://github.com/KandyKochar" target="_blank" class="contact-link">github.com/KandyKochar</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+              <div><h4>Instagram</h4><a href="https://www.instagram.com/kandykochar/" target="_blank" class="contact-link">@kandykochar</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal delay-1">
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <div class="form-row-two">
+              <div class="form-group"><label>Your Name</label><input type="text" class="form-control" id="nameInput" placeholder="Your name"/></div>
+              <div class="form-group"><label>Email Address</label><input type="email" class="form-control" id="emailInput" placeholder="Your email"/></div>
+            </div>
+            <div class="form-group"><label>Subject</label><input type="text" class="form-control" id="subjectInput" placeholder="Job opportunity / Collaboration / Hello!"/></div>
+            <div class="form-group"><label>Message</label><textarea class="form-control" id="messageInput" rows="5" placeholder="Tell me about your project or opportunity..."></textarea></div>
+            <button class="btn btn-primary btn-full" id="sendBtn">Send Message <i class="fas fa-paper-plane"></i></button>
+            <p class="form-note" id="formStatus"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-logo"><span class="logo-k">K</span><span class="logo-rest">andy Kochar</span></div>
+          <p class="footer-tagline">Building at the nexus of technology &amp; commerce.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/kandykochar/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/KandyKochar" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:kandykochar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col"><h4>Navigate</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#tools">Tools</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col"><h4>Projects</h4>
+            <ul>
+              <li><a href="#proj-carebear">CareBear</a></li>
+              <li><a href="#proj-bankease">BankEase</a></li>
+              <li><a href="#proj-srp">ConnectEd</a></li>
+              <li><a href="#proj-content">Content Work</a></li>
+            </ul>
+          </div>
+          <div class="footer-col"><h4>Connect</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/kandykochar/" target="_blank">Instagram</a></li>
+              <li><a href="https://github.com/KandyKochar" target="_blank">GitHub</a></li>
+              <li><a href="mailto:kandykochar@gmail.com">Email Me</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Kandy Kochar · Portfolio '26 · Toronto, Canada</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="notification" id="notification">
+    <i class="fas fa-check-circle"></i> Message sent! I'll be in touch soon ✨
+  </div>
+
+</body>
+</html>
